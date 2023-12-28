@@ -1,5 +1,4 @@
-# if the given range is 10
-given_number = 5
- 
-for i in range(11):
-        print (given_number," x",i," =",5*i)
+# if the below list is given
+list = [1,2,4,6,88,125]
+ for i in list:
+    print(i)
