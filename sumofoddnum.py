@@ -1,4 +1,4 @@
-given_range = 10
+given_range = 40
 
 # Set up a variable to store the sum
 # with an initial value of 0
