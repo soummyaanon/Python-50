@@ -1,28 +1,22 @@
-# the given number
-given_number = 153
- 
-# convert given number to string
-# so that we can iterate through it
-given_number = str(given_number)
- 
-# store the lenght of the string for future use
-string_length = len(given_number)
- 
-# initialize a sum variable with
-# 0 value to store the sum of the product of
-# each digit
-sum = 0
- 
-# iterate through the given string
-for i in given_number:
-    sum += int(i)**string_length
- 
-# if the sum matches the given string
-# its an amstrong number
-if sum == int(given_number):
-    print("The given number",given_number,"is an Amstrong number.")
- 
-# if the sum do not match with the given string
-# its an amstrong number
+# The given number
+given_number = 407
+
+# Convert given number to string so that we can iterate through it
+given_str = str(given_number)
+
+# Store the length of the string for future use
+string_length = len(given_str)
+
+# Initialize a sum variable with 0 value to store the sum of the product of each digit
+total_sum = 0
+
+# Iterate through the given string
+for digit in given_str:
+    total_sum += int(digit) ** string_length
+
+# Check if the sum matches the given number; it's an Armstrong number
+if total_sum == given_number:
+    print(f"The given number {given_number} is an Armstrong number.")
 else:
-    print("The given number",given_number,"is Not an Amstrong number.")
+    print(f"The given number {given_number} is not an Armstrong number.")
+
