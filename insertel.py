@@ -3,6 +3,7 @@ def insert_into_sorted_list(sorted_list, element):
     sorted_list.sort()
     return sorted_list
 
+sorted_list = input("Enter the sorted list: ").split()
+element = input("Enter the element to insert: ")
 
-
-print(insert_into_sorted_list([1,2,3,5,6], 4))
+print(insert_into_sorted_list(sorted_list, element))
