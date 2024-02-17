@@ -1,4 +1,4 @@
-n = int(input("How many terms You Want in fibonacci Series :"))
+n = int(input("Enter terms range:"))
 if n==1:
     print("1")
 elif n == 2:
