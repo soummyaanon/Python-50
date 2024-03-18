@@ -28,4 +28,4 @@ print("Broadcasted Array:", c)
 
 # Plot the broadcasted array
 plt.plot(c)
-plt.show()
+plt.show() # Display the plot

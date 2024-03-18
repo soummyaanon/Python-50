@@ -1,3 +1,5 @@
+# Description: This file contains the code  Program number 3
+
 # Encapsulation
 class Encapsulation(object):# This is a class
     def __init__(self, a, b, c):# This is a constructor
