@@ -1,9 +1,7 @@
-from builtins import input
-
 def linear_search(array, target):
-    for i in range(len(array)):
-        if array[i] == target:
-            return i
+    for index, value in enumerate(array):
+        if value == target:
+            return index
     return -1
 
 # Prompt the user to enter the array as a list of integers

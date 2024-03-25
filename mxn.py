@@ -7,11 +7,9 @@ d = np.arange(1, 5).reshape(2, 2)
 print("2x2 array:\n", d)
 
 # Print the attributes of d
-print("Array Shape is: ", d.shape)  # Prints the shape of the array (2, 2)
-print("Array dimensions are ", d.ndim)  # Prints the number of dimensions of the array (2)
-print("Length of each element of array in bytes is ", d.itemsize)  # Prints the size of each element in bytes (4)
+print("Array Shape is:", d.shape, "Array dimensions are", d.ndim, "Length of each element of array in bytes is", d.itemsize)
 
 # Visualize d
-plt.imshow(d)  # Displays the array as an image
+plt.imshow(d, origin='upper')  # Displays the array as an image with origin at the upper left corner
 plt.colorbar(orientation='vertical')  # Adds a colorbar to the plot
 plt.show()  # Shows the plot
