@@ -1,15 +1,18 @@
-score = float(input("Enter a score between 0.0 and 1.0: "))
-
-if score < 0.0 or score > 1.0:
-    print("Error: Score is out of range.")
-else:
+def calculate_grade(score):
     if score >= 0.9:
-        print("Grade: A")
+        return 'A'
     elif score >= 0.8:
-        print("Grade: B")
+        return 'B'
     elif score >= 0.7:
-        print("Grade: C")
+        return 'C'
     elif score >= 0.6:
-        print("Grade: D")
+        return 'D'
     else:
-        print("Grade: F")
+        return 'F'
+
+score = float(input("Enter a score between 0.0 and 1.0: "))
+if 0.0 <= score <= 1.0:
+    grade = calculate_grade(score)
+    print("Grade:", grade)
+else:
+    print("Error: Score must be between 0.0 and 1.0.")
