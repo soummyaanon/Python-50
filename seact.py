@@ -1,18 +1,11 @@
-def calculate_grade(score):
-    if score >= 0.9:
-        return 'A'
-    elif score >= 0.8:
-        return 'B'
-    elif score >= 0.7:
-        return 'C'
-    elif score >= 0.6:
-        return 'D'
-    else:
-        return 'F'
+from matplotlib import pyplot as plt
+import seaborn as sns
 
-score = float(input("Enter a score between 0.0 and 1.0: "))
-if 0.0 <= score <= 1.0:
-    grade = calculate_grade(score)
-    print("Grade:", grade)
-else:
-    print("Error: Score must be between 0.0 and 1.0.")
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+
+# Create a line plot using Seaborn
+sns.lineplot(x=x, y=y, marker='o', linestyle='--', color='blue')  # Customize marker, linestyle, and color
+
+plt.show()
