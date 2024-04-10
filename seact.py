@@ -1,11 +1,17 @@
-from matplotlib import pyplot as plt
-import seaborn as sns
+# Prompt user for input
+salesAmount = float(input("Enter sales amount: "))
 
-# Sample data
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 6, 8, 10]
+# Calculate commission based on sales amount
+if salesAmount <= 1000:
+    commissionRate = 0.05
+elif salesAmount <= 5000:
+    commissionRate = 0.07
+elif salesAmount <= 10000:
+    commissionRate = 0.1
+else:
+    commissionRate = 0.15
 
-# Create a line plot using Seaborn
-sns.lineplot(x=x, y=y, marker='o', linestyle='--', color='blue')  # Customize marker, linestyle, and color
+commission = salesAmount * commissionRate
 
-plt.show()
+# Display commission
+print("Commission earned:", commission)
