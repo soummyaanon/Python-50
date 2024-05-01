@@ -1,17 +1,22 @@
-# Prompt user for input
-salesAmount = float(input("Enter sales amount: "))
+def print_pattern(s):
+    n = len(s)
+    mid = n // 2
 
-# Calculate commission based on sales amount
-if salesAmount <= 1000:
-    commissionRate = 0.05
-elif salesAmount <= 5000:
-    commissionRate = 0.07
-elif salesAmount <= 10000:
-    commissionRate = 0.1
-else:
-    commissionRate = 0.15
+    for i in range(mid + 1):
+        for j in range(n):
+            if j == i or j == n - i - 1:
+                print(s[j], end='')
+            else:
+                print(' ', end='')
+        print()
 
-commission = salesAmount * commissionRate
+    for i in range(mid - 1, -1, -1):
+        for j in range(n):
+            if j == i or j == n - i - 1:
+                print(s[j], end='')
+            else:
+                print(' ', end='')
+        print()
 
-# Display commission
-print("Commission earned:", commission)
+# Test the function
+print_pattern('12345')
